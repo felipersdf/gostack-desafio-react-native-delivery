@@ -123,7 +123,7 @@ const FoodDetails: React.FC = () => {
     if (isFavorite) {
       api.delete(`/favorites/${food.id}`);
     } else {
-      api.post(`/favorite`, food);
+      api.post(`/favorites`, food);
     }
 
     setIsFavorite(!isFavorite);
